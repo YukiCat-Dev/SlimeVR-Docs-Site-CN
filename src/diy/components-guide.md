@@ -1,26 +1,26 @@
-# Components Guide
+# 组件指南
 
 The costs shown should be taken as a **rough approximation** due to prices changing over time. Prices are in USD.
 
-## Calculate Your Costs
-**Number of trackers**
+## 计算你的花费
+**追踪器的数量**
 
-<input id="5imu" type="radio" name="diy-set" value="5"> <label for="5imu">Lower-Body Set - 5 Trackers</label>&nbsp; &nbsp;|&nbsp;
-<input id="6imu" type="radio" name="diy-set" value="6" checked="checked"> <label for="6imu">Core Set - 5 Trackers, 1 Extension</label>&nbsp; &nbsp;|&nbsp;
-<input id="8imu" type="radio" name="diy-set" value="8"> <label for="8imu">Enhanced Core Set - 5 Trackers, 3 Extensions</label>&nbsp; &nbsp;|&nbsp;
-<input id="10imu" type="radio" name="diy-set" value="10"> <label for="10imu">Full-Body Set - 7 Trackers, 3 Extensions</label>
+<input id="5imu" type="radio" name="diy-set" value="5"> <label for="5imu">下半身追踪包 - 5 追踪器</label>&nbsp; &nbsp;|&nbsp;
+<input id="6imu" type="radio" name="diy-set" value="6" checked="checked"> <label for="6imu">核心包 - 5 追踪器, 1 Extension</label>&nbsp; &nbsp;|&nbsp;
+<input id="8imu" type="radio" name="diy-set" value="8"> <label for="8imu">增强核心包 - 5 追踪器, 3 Extensions</label>&nbsp; &nbsp;|&nbsp;
+<input id="10imu" type="radio" name="diy-set" value="10"> <label for="10imu">全身追踪包 - 7 追踪器, 3 Extensions</label>
 
 ---
 <div class="table-wrapper">
     <table>
         <thead>
             <tr>
-                <th>Component</th>
-                <th>Choice</th>
-                <th>Amount</th>
-                <th>Cost per</th>
-                <th>Cost with Shipping</th>
-                <th style="min-width: 200px">Quick Link</th>
+                <th>组件</th>
+                <th>选择</th>
+                <th>数量</th>
+                <th>每件花费</th>
+                <th>含运费的花费（国际邮件）</th>
+                <th style="min-width: 200px">快速链接</th>
             </tr>
         </thead>
         <tbody id="diy-components">
@@ -28,94 +28,93 @@ The costs shown should be taken as a **rough approximation** due to prices chang
     </table>
 </div>
 
-**TOTAL COST**: ~$<span id="diy-total"></span>
+**总花费**: ~$<span id="diy-total"></span>
 
-**Please note**: JST connectors are an ***optional*** convenience if for whatever reason you want to be able to disconnect your extensions. If you plan on always having your extensions connected, you likely do not need JST connectors! Regular wires will work fine for connecting your extensions.
+**请注意**: JST连接器是一个很好的 ***可选项*** 方便你随时断开扩展. 如果你打算一直连接你的扩展，你可能不需要JST连接器，普通线材已经够用了。
 
-## Component Breakdown
+## 组件分解
 
-A complete set of SlimeVR trackers can be made from around $70 to $250, depending on what you have at home already and your choice of parts.
+一套完整的 SlimeVR 追踪器的价格在 70 美元到 250 美元之间，具体取决于您家里已有的设备和您选择的零件。
 
-One of the most impactful choices you make is what type of IMU (Inertial measurement unit) you use, which will determine the price point as well as the quality of the tracking.
+您使用的IMU（惯性测量单元）将会决定成本和跟踪质量。
 
-Another important consideration is where you buy your components. This guide will use costs from AliExpress, which is where most of us buy our components from due to both price and availability. Unfortunately the shipping times from there are quite long, with many orders taking between 3-6 weeks to arrive. You can also buy from Amazon or other local retailers, but pricing will vary wildly.
+另一个重要的考虑因素是您在哪里购买组件。本指南将使用 AliExpress 的成本，由于价格和可用性，我们大多数人都是从 AliExpress 购买组件的。不幸的是，那里的运输时间很长，许多订单需要 3-6 周才能到达。您也可以从亚马逊或其他当地零售商处购买，但价格会有很大差异。（译者注：直接上淘宝）
 
-When it comes to purchasing components it's also prudent to get a few extras in case any come faulty, or if you accidentally break one along the way. If you plan on ordering from AliExpress where the shipping times are quite long, take note -- ordering an exact amount of the parts needed and having one or two components die could mean a long wait before getting replacements. Generally speaking, IMUs are the component most likely to have break or to come broken, so plan accordingly. Wemos D1 Minis and TP4056 charging boards are fairly reliable, but a few extra is worth considering.
+在购买组件时，请注意买够足量的配件以预防可能挂掉一两个零件。一般来说，IMU 是最有可能损坏或损坏的组件，因此请相应地进行规划。Wemos D1 Minis 和 TP4056 充电板相当可靠，但还有一些值得考虑。
 
 * TOC
 {:toc}
 
 ### Wemos D1 Mini
 
-The Wemos D1 Mini is an ESP8266 dev board, it's basically a small computer which handles the thinking and WiFi connection. You can use a different microcontroller with the required specifications, however the documentation on other microcontrollers is not as comprehensive. If you decide to do this, please check the #diy channel in our [Discord](https://discord.gg/SlimeVR) for more information.
+Wemos D1 Mini 是一款 ESP8266 开发板, 基本上是一台处理运算和WiFi连接的小型计算机。 您可以使用具有所需规格的不同微控制器，但其他微控制器的文档并不全面。如果你打算那么做了, 请检查 #diy channel in our [Discord](https://discord.gg/SlimeVR) 了解更多信息.
 
-There are multiple variants of the D1 Mini, some better than others. The main variants you should look at purchasing would be the CH340, V3.0, and V4.0. There are, however, variants you should avoid. These would be the FT232, and Pro variants. The FT232 variant may have USB connectivity issues due to fake FT232 chips, and the Pro variant has a design flaw with its antenna that necessitates having an external antenna.
+D1 Mini 有多种变体，有些比其他的更好。您应该考虑购买的主要型号是 CH340、V3.0 和 V4.0。但是，您应该避免某些变体。比如说 FT232 和 Pro 变体。由于假冒的 FT232 芯片，FT232 变体可能存在 USB 连接问题，而 Pro 变体的天线存在设计缺陷，需要使用外部天线。
 
-### IMU (Inertial Measurement Unit)
+### IMU （惯性测量单元）
 
-SlimeVR uses several IMUs in order to determine your pose. There are a handful of options available which you can read about more on the [IMU Comparison page](imu-comparison.md).
+SlimeVR 使用多个 IMU 来确定您的姿势。有一些可用的选项，您可以在[IMU Comparison page](imu-comparison.md)上阅读更多信息。
 
-### Batteries
+### 电池
 
-There are many different options for batteries, and the size you go with will generally determine the size of the case you will need. You will need one battery per Wemos D1 Mini. As far as battery life is concerned, every 100 mAh a battery is rated for will last for 1 hour of use. So, a 1200 mAh battery will generally last around 12 hours of continuous use.
+电池有很多不同选择, 通常按照你DIY的传感器来决定. 每个Wemos D1 Mini需要一块电池。就电池续航而言, 每 100 mAh 能用一小时。因此，一块 1200 毫安时的电池通常可持续使用 12 小时左右
 
-Flat Li-Po batteries are generally fairly truthful about their capacity, however, 18650s can greatly vary in capacity depending on manufacturer. A generic no-name 18650 could be as low in capacity as 800 mAh, whereas an 18650 made by a reputable manufacturer like LG, Samsung, or Sony may have as high capacity at 3500 mAh. In general, be suspicious of claimed 18650 capacity.
+扁平锂电池的电池容量通常是真实的, 然而, 18650系列的容量跟制造商有很大关系. 普通无名 18650 的容量可能低至 800 mAh，而 LG、三星或索尼等知名制造商生产的 18650 可能具有 3500 mAh 的高容量。一般来说，请持有怀疑的态度看待标称容量（尤其淘宝商家的）。
 
-It's also worth noting that not all batteries are created equal. Some will have protection circuitry and some will not. Generally speaking, flat Li-Po batteries will usually have protection circuitry, whereas battery such as 18650s will not. If you're planning on getting flat Li-Po batteries, the protection circuitry will usually look like a small PCB with a few chips on it, beneath the yellow polyimide tape on the battery. That being said, the [TP4056 charging board](#charging-board---tp4056) will provide these same features so lack of battery protection shouldn't be a make or break factor, but rather additional peace of mind and added safety.
+还需要注意的是并非所有电池都相同。有些会有保护电路有些则没有。一般来说,扁平锂电池通常会有保护电路, 而18650s等电池则没有. 如果你有使用扁平锂电池的计划, 请注意保护电路通常看起来像一块带有一些芯片的小 PCB，位于电池上的黄色聚酰亚胺胶带下方。 话虽如此 [TP4056 charging board](#charging-board---tp4056) 能提供相同的功能，因此电池保护不是必须关注的，而是带来额外的安心和安全性。
+### 充电板-TP4056
 
-### Charging Board - TP4056
+您需要一个充电控制器以确保电池安全充电。请记住在没有焊接二极管的情况下，如果充电时不小心让传感器保持开启状态，则可能会损坏电池。 话虽如此，TP4056 充电板还提供了一些安全功能，例如过放电保护、过充电保护(仅当您没有 [二极管](#diodes-optional)时才会关闭!), 短路保护和过流保护。 
 
-To charge your batteries, you need to get a charge controller to make sure the batteries are safely charged. Bear in mind, without diodes, you can potentially damage your battery if you accidentally leave your tracker on while charging. That being said, the TP4056 charging boards also provide some safety features such as over-discharge protection, over-charging protection (only when turned off if you don't have [diodes](#diodes-optional)!), short circuit protection, and over current protection.
+关于充电板，考虑充电速率及其对电池整体寿命的影响也很重要。大多数 TP4056 充电板都配置为以 1000mA 的电流充电，因此建议您将 TP4056 充电板与至少 1000mAh 的电池配对，否则如果使用具有以下功能的电池可能会缩短电池的续航使其容量低于 1000mAh。一些 TP4056 充电板具有可通过 DIP 开关配置的充电电流，但大多数没有。如果您有兴趣了解有关 TP4056 的更多信息，可以参考数据表，可在 [这里](https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf)找到。
 
-In regards to charging boards, it's also important to consider the charging rate and how that might affect the over all longevity of your battery. Most TP4056 charging boards are configured to charge at a current of 1000mA, and so it is recommended that you pair your TP4056 charging board with a battery that is at least 1000mAh, or you could be shortening the lifespan of your battery if using a battery with a capacity below 1000mAh. Some TP4056 charging boards have a configurable charge current via DIP switches, but most do not. If you're interested in learning more about the TP4056, you can refer to the datasheet, which can be found [here](https://dlnmh9ip6v2uc.cloudfront.net/datasheets/Prototyping/TP4056.pdf).
+同样地，在充电方面，需要记住大多数TP4056充电板与Type-C PD协议充电器不兼容。例如，尝试使用手机Type-C充电器可能不起作用。相反，您需要一个标准的USB A充电器。
 
-Likewise, in regards to charging, it's important to bear in mind that most TP4056 charging boards are incompatible with USB C PD chargers. For example, trying to use a phone USB C phone charger likely would not work. Instead, you will need a standard USB A charger.
+### 电源开关
 
-### Power Switches
+你需要一个开关来关闭您的SlimeVR 追踪器以节省电池电量，并防止过充减少电池的使用寿命。还有就是不应该在追踪器开启时充电。
 
-You want to be able to shut off your SlimeVR trackers, to conserve battery, and prevent unnecessary charge cycles that will reduce the lifetime of the battery. These are also important as you should not charge the trackers while they are on.
+### 整流二极管 (可选的)
 
-### Diodes (Optional)
+一对整流二极管作为一种额外的安全措施，能允许您边充边用，并防止打开开关的同时过充会损坏设备。
 
-A pair of diodes act as an added safety measure that allow the tracker to be used while charging and protect against accidental damage due to over-charging if accidentally left powered on.
+### 电阻 (可选的)
 
-### Resistors (Optional)
+使用“电池感应”电阻，您可以在服务器中检查电池百分比。如果没有这个，当您的追踪器电池接近耗尽时，Wemos D1 Mini将快速闪烁。可以使用~100K欧姆至~220K欧姆的电阻，但是在报告电池电量时可能会有精度损失。使用180K以外的电阻值需要在固件中修改对应的阻值。
 
-With a "Battery sense" resistor you can check the battery percentage in the server. Without this, you will only know when your tracker is close to dying, as the Wemos D1 Mini will rapidly blink when the battery is very low. Resistor values from ~100K ohm to ~220K ohm can be used, however there may be a loss in precision when reporting battery level. Using a resistor value other than 180K will mean needing to change the resistor value in firmware.
+### 线材
 
-### Wiring
+要把你的各种组件连接起来需要用到线材。官方文档建议使用26AWG多股线。如果你想省钱可以从任何废弃的电缆中拆出线来用，比如VGA电缆、以太网或USB。（但真的不建议那么抠）
 
-To connect your various components together will require some wiring. It is generally recommended to use 26AWG stranded wiring. If you're thrifty you can salvage the wires out of various disused cables you might have, such as VGA cables, ethernet, or USB.
+另外，如果计划做任何扩展，你可能需要一些连接器，这样你就可以做可拆卸扩展组件。虽然可以使用各种类型的连接器，但最常用的还是5针JST连接器。也有人使用过RJ45以太网连接器和USB C。
 
-Additionally, as an added convenience if you plan on making any extensions, you may want to add connectors so you can have removable extensions. Various types of connectors can be used, but the most commonly used are 5 pin JST connectors. Others have also used RJ45 ethernet connectors, and USB C.
+### 外壳
 
-### Cases
+你可以随心所欲选择和设计外壳。如果你有3D打印机，你可以用大约10美元的丝材打印一些外壳。有一些很棒的[社区制作外壳](cases.md)，也可以查看我们[Discord](https://discord.gg/SlimeVR)上的#diy 和#cases 频道。你也可以选择购买一个小的塑料外壳来装你的所有组件。请根据你拥有的配件和设备综合考虑后再选择。（译者注：不用外壳也可以，一坨胶水也不是不行？）
 
-Choosing or designing a case is where you will have the most freedom to choose whatever you like. If you have access to a 3d printer you can print some cases for ~$10 worth of filament. There are some great [Community-built cases](cases.md), likewise it's worth checking the #diy and #cases channels of our [Discord](https://discord.gg/SlimeVR). There's also the option of buying a small plastic case to fit all of your components. Make sure to check dimensions on both pre-bought and 3D printed cases so that it fits your chosen components.
+### 绑带
 
-### Straps
+绑带也是一个可以随心所欲的点。首选的建议是使用有魔术贴的弹性绑带，因为可伸缩不容易受到活动影响。尼龙绑带虽然也可用，但不灵活，容易随着移动而滑动所以不合适。一般来说，你需要至少38毫米或1.5英寸宽的绑带，太小的话安装不稳定。
 
-Straps are another area where you have a lot of liberty to try whatever works best for you. The go-to recommendation is to use elastic straps with velcro. Elastic straps are the go-to recommendation because they will stretch and should stay in place however you move. Nylon straps, while technically usable, are fairly inflexible will tend to slide as you move, making them less suitable. Generally speaking, you will want straps that are at least 38mm or 1.5 inches wide, going any smaller will result in less stable mounting.
+安装方面，如果买不到足够长的绑带可以用带魔术贴的绑带连接在一起，形成一条更长的绑带（一般也就腰带和胸部需要特别长的）。如果你胸部追踪器经常滑动，胸部也可以使用GoPro的安装器来提高稳定性。另外，你需要根据部位购买不同长度的绑带，最好自己量一下长度！值得注意的是弹性绑带会伸展，所以买短一点没关系，保留足够的拉伸空间。注：腰部可以买便宜的腰带改装，一样好用。
 
-When it comes to mounting, you may find that there are not any straps long enough to go around your torso -- in this case, two straps with velcro can be chained together to make one longer strap. Another option for the chest in particular is to use a GoPro chest mount, which can improve stability greatly if you find your chest trackers tend to slide. Also, its worth mentioning that you may want different sized straps depending on where each tracker is going to go, such as having shorter straps for thigh trackers than ankle trackers. Be sure to measure yourself with a tape measure if you're going to go this route! It's worth noting that *elastic stretches* so if you find straps that seem just a bit too small, they may stretch an additional 50mm or so or more depending on length.
+关于DIY绑带的想法，可以参考[DIY Straps Guide](diy-straps.md)。
 
-For ideas on making your own custom straps, consider viewing the [DIY Straps Guide](diy-straps.md).
+### 工具
 
-### Tools
+你需要这些工具来组装你的传感器：
 
-You will also need some tools to be able to put together a tracker. You might have these already or have a friend or a maker space nearby where you can borrow these:
+* 一个烙铁、焊锡、助焊剂。
+* 一个剪线钳。
+* 焊接固定夹
+* （可选）一个万用表来检查你的连接。
+* （可选）一个吸锡器或去锡编织带。这样手滑了可以补救。
 
-* A soldering iron, solder, and solder flux.
-* A wire cutter.
-* A soldering third hand
-* (Optional) A multimeter to check your connections.
-* (Optional) A solder sucker or desoldering braid. To more easily be able to fix mistakes when soldering.
+注意：确保你不要买用于焊接水暖配件的焊锡。这种类型的焊锡可能会腐蚀PCB和电子元件。
 
-Please note: ensure you do not buy solder intended for soldering plumbing fixtures. This type of solder is more acidic and may corrode PCBs and electronic components.
+如果你没有做过像这样的DIY项目，请在YouTube/Bilibili上查找一些焊接教程，并随时在我们的[Discord](https://discord.gg/SlimeVR)上提问。
 
-If you haven't done a DIY project like this, look up some soldering tutorials on YouTube and feel free to ask questions in the #diy channel in our [Discord](https://discord.gg/SlimeVR).
-
-*Created by Carl (<https://github.com/carl-anders>), edited by CalliePepper#0666 and NWB#5135*
+*Created by Carl (<https://github.com/carl-anders>), edited by CalliePepper#0666 and NWB#5135* 翻译：DazaiYuki
 <script src="../assets/js/diy.js"></script>
 <style>
     @media (min-width: 50rem) {

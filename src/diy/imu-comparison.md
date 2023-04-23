@@ -1,10 +1,10 @@
-# IMU Comparison
-The community has been hard at work testing various IMUs for DIY SlimeVR trackers.
-A survey was held within the DIY community for a clearer picture of the current state of available IMUs.
-This page is based on user feedback and weighed against the survey, with scores showing the average answer given to the chip.
-Following completing your own trackers, you can complete an extended version of that original survey yourself, or view previous responses on the [SlimeVR Experience Survey page](../misc/survey.md).
+# IMU 比较
+社区已经花费了大量工作去研究DIY SlimeVR Trackers的IMU.
+为了更清楚地了解当前可用的IMU的状况，DIY社区进行了一项调查。
+这个页面是基于用户反馈和调查结果，分数是取平均数得出的。
+模块有很多变数因此仅供参考，查看以前的报告可以点 [SlimeVR Experience Survey page](../misc/survey.md).
 
-## Index
+## 导航
 - [BNO085](#bno085)
 - [BMI160](#bmi160)
 - [ICM20948](#icm20948)
@@ -15,72 +15,73 @@ Following completing your own trackers, you can complete an extended version of 
 - [MPU6050](#mpu6050)
 - [Addendum](#addendum)
 
-## Criteria
-We rank these chips in the following categories: Reset Time, Cost, Availability and Build quality.
-These factors are meant to give a quick indication as to what to expect from various IMUs, your mileage may vary.
-For clarification purposes: If 3 out of 10 chips are dead on arrival or die during early use, we refer to that as poor build quality.
+## 评分标准
+我们根据以下几个方面对这些芯片进行排名：校准时间、成本、供应状况和制造质量。
+这些因素旨在给出一个快速的指示，让你从各个IMU中取舍，至于具体实际情况可能受到很多方面的影响（店家、制造商、物流……）。
+注：如果10个芯片中有3个在到货或早期使用时挂掉，那就是制造质量差。
+这里的校准时间是指IMU传感器的复位时间，即在出现漂移或误差时，需要重新校准IMU传感器的时间。时间越长，表示IMU传感器的稳定性越好，越不容易出现漂移或误差。时间越短，表示IMU传感器的稳定性越差，越容易出现漂移或误差。
 
-## General Recommendations
-At the moment, the BMI160 is the best price-to-perfomance option, far surpassing other IMUs such as the MPU6050. The BMI160 does not require a stable magnetic environment, making it a suitable option for many more people than 9DOF IMUs, such as the MPU9250 or ICM20948, or even the MPU6050+QMC5883L. BNO085s, while offering greater reset times, come at a significant price premium.
+## 最高性价比
+目前，BMI160是最佳的性价比选择，远远超过了其他例如MPU6050这类IMU。因为BMI160不需要稳定的磁场环境，使它成为比9DOF IMU（MPU9250或ICM20948这类）更适合大众，甚至比MPU6050+QMC5883L的方案更好。BNO085虽然综合体验很好但也贵。（注：原文的角度是在欧美，中国境内网购并不需要那么高额的运费）
 
-When referring to the order of the IMUs on this page, bear in mind that they're listed roughly in order of best to worst.
+在参考本页面上IMU的顺序时，请记住，它们是按照从好到坏的顺序大致列出的。
 
 ---
 ## BNO085
-This is the IMU used in production slimes.
-They are reliable and stable chips, but at the time of writing they remain difficult to find at modest prices like other IMUs.
+这也是SlimeVR官方方案使用的传感器
+可靠和稳定的芯片，但很难以适中的价格购买到。
 
 
-|Reset time |Cost |Availability|Build quality|
+|校准时间 |成本  |可用性|制造质量|
 |:---------:|:---:|:----------:|:-----------:|
-|30 - 45 min|~$25 |Sufficient  |Excellent    |
+|30 - 45 min|~$25 |充足  |优秀    |
 
 Score: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>
 
-|Pros          |Cons                                   |
+|优点          |缺点                                   |
 |--------------|---------------------------------------|
-|Accurate      |Expensive                              |
-|Reliable      |Extra wiring required compared to MPUs |
-|Smooth        |                                       |
+|精准          |很贵                              |
+|可靠         |与MPU系列对比需要额外布线            |
+|平滑        |                                       |
 
 ---
 ## BMI160
-The BMI160 is the current go-to IMU for DIY SlimeVR.
-The BMI160 is a relatively new chip with decent performance and good reliability.
-It is recommended that you use experimental firmware as it improves the BMI160s performance considerably.
+DIY SlimeVR的主流之一。
+BMI160是一款相对较新的芯片，具有不错的性能和良好的可靠性。
+建议你使用实验性的固件，因为它可以显著提高BMI160的性能。
 
-|Reset time |Cost  |Availability|Build quality|
+|校准时间 |成本  |可用性|制造质量|
 |:---------:|:----:|:----------:|:-----------:|
-|10 - 20min |~$1.42|Sufficient  |Good         |
+|10 - 20min |~$1.42|充足  |好         |
 
 Score: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o" ></i>
 
-|Pros                   |Cons                                             |
+|优点                   |缺点                                             |
 |-----------------------|-------------------------------------------------|
-|Cheap                  | Requires manual calibration the first time      |
-|Reliable               | Beta firmware required for good performance     |
-|Smooth                 |                                                 |
-|Single time calibration|                                                 |
+|便宜                   | 第一次需要手动校准                               |
+|可靠                   | 需要实验性固件提供更好的性能                      |
+|平滑                   |                                                 |
+|单次校准               |                                                 |
 
 ---
 ## ICM20948
-The ICM 20948 is a comparatively modern chip.
-While initial testing seems positive, this chip has not had enough field time for conclusive results.
+ICM 20948是一款相对较新的芯片。
+虽然初步测试看起来不错，但这款芯片还没有足够的实地使用时间来得出结论。
 
-There are quite a few variants of the ICM-20948, most of which operate at 3.3v.
-Pimoroni ICM-20948 (Please note this board requires you to cut the bridge on the back to change the address)
-Adafruit ICM-20948 (Please note this board requires you to solder the bridge on the back to change the address)
-SparkFun ICM-20948 (Please note this board requires you to solder the bridge on the back to change the address)
-GY-912 (Please note this board requires you to bridge SD0 to GND to change the address)
+ICM-20948有很多种，其中大多数工作在3.3v。
+Pimoroni ICM-20948（请注意，这块板子需要你切断背面的桥接，以改变地址）
+Adafruit ICM-20948（请注意，这块板子需要你在背面焊接桥接，以改变地址）
+SparkFun ICM-20948（请注意，这块板子需要你在背面焊接桥接，以改变地址）
+GY-912（请注意，这块板子需要你将SD0和GND桥接，以改变地址）
 
-CJMCU-20948 is known to run on 1.8v and needs additional hardware to work.
-A 1.8v Linear Voltage regulator and Logic Level Converter is needed and as such this board is not recommended.
+CJMCU-20948已知运行在1.8v，需要额外的硬件才能工作。
+需要一个1.8v线性电压调节器和逻辑电平转换器，因此不推荐使用这块板子。
 
 
 
-|Reset time |Cost |Availability|Build quality|
+|校准时间 |成本  |供应状况|制造质量|
 |:---------:|:---:|:----------:|:-----------:|
-|15 - 60 min|~$15 |Insufficient|Good         |
+|15 - 60 min|~$15 |不足 |Good         |
 
 Score: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>
 

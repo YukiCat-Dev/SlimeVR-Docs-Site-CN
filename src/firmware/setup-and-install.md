@@ -1,26 +1,26 @@
-# Setting up the Environment
+# 设置环境
 
 This procedure will show how to prepare your system for uploading the firmware to your tracker.
 
-## 1. Install Visual Studio Code
+## 1. 安装 Visual Studio Code
 
-Download the [latest Visual Studio Code](https://code.visualstudio.com/download) and install it.
+下载 [最新的VS Code](https://code.visualstudio.com/download)然后安装。
 
 <div class="embeddedVideo">
 	<video name="Downloading Visual Studio Code" codecs='video/webm;codecs="vp9"' autoplay muted loop controls>
 	  <source src="../assets/videos/downloadVSC.webm">
 	</video><br>
-	Choose the correct environment
+	选择正确的环境
 </div>
 
 <div class="embeddedVideo">
 	<video name="Installing Visual Studio Code" codecs='video/webm;codecs="vp9"' autoplay muted loop controls>
 	  <source src="../assets/videos/installVSC.webm">
 	</video><br>
-	Follow the installation process
+	跟随安装进程
 </div>
 
-## 2. Install PlatformIO IDE
+## 2. 安装 PlatformIO IDE
 
 Once Visual Studio Code is installed, open it and install [PlatformIO IDE for VSCode](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide), an extension that will allow you to connect to the tracker, build and upload the firmware.
 
