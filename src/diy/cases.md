@@ -1,5 +1,6 @@
-# Community-built Cases
-The SlimeVR community has built a huge number of cases for style, internals and purpose. If you wish to add your case to this page, please fork the docs on github.
+# 社区制作外壳
+SlimeVR社区已经有大量的外壳设计。 如果你想把你的外壳添加到这个页面，请在Github上fork文档。
+看看就好。
 
 * TOC
 {:toc}

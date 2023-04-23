@@ -1,4 +1,4 @@
-# DIY Straps Guide
+# DIY 绑带教学
 
 * TOC
 {:toc}
