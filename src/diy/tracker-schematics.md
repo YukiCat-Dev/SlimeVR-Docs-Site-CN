@@ -1,9 +1,9 @@
-# Tracker Schematics
+# 传感器电路图
 
 ## Wemos D1 Mini
 
 * IMU
-  - <input id="bno" type="radio" name="d1-imu" value="bno"> <label for="bno">BNO085</label> - Great but expensive $$$.
+  - <input id="bno" type="radio" name="d1-imu" value="bno"> <label for="bno">BNO085</label> - 好但贵 $$$.
    - <input id="bno_ada" type="radio" name="d1-imu" value="bno_ada"> <label for="bno_ada">BNO085 (Adafruit)</label> - Adafruit version of BNO085.
   - <input id="mpu" type="radio" name="d1-imu" value="mpu" checked="checked"> <label for="mpu">MPU6050</label> - Cheap but drifts quite a bit.
   - <input id="mpu9250" type="radio" name="d1-imu" value="mpu9250"> <label for="mpu9250">MPU9250 (GY-91)</label> - Good but plagued with fakes.
@@ -35,7 +35,7 @@
 | D7    | GPIO13 | Yes              | Yes         | MOSI pin for SPI interface                          |
 | D8    | GPIO15 | Pulled to ground | Yes         | CS pin for SPI interface                            |
 
-## Cable layout recommendation for auxiliary tracker
+## 辅助跟踪器电缆布局建议
 
 Note that while schematics show SDA and SCL running adjacent to each other, make sure that they are not physically adjacent
 when running in the auxiliary tracker cable. This is to avoid [crosstalk](https://www.i2cchip.com/i2c_connector.html#Crosstalk) and ensure stable operation of both trackers when cable and allows the extension to safely reach more than 80cm.

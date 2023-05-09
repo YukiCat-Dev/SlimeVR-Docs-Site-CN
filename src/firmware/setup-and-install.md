@@ -22,7 +22,7 @@ This procedure will show how to prepare your system for uploading the firmware t
 
 ## 2. 安装 PlatformIO IDE
 
-Once Visual Studio Code is installed, open it and install [PlatformIO IDE for VSCode](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide), an extension that will allow you to connect to the tracker, build and upload the firmware.
+安装完Visual Studio Code后，打开并安装 [PlatformIO IDE for VSCode](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide), 扩展，它将允许您连接到追踪器，构建和上传固件。
 
 <div class="embeddedVideo">
 	<video name="Installing PlatformIO" codecs='video/webm;codecs="vp9"' autoplay muted loop controls>
@@ -30,7 +30,7 @@ Once Visual Studio Code is installed, open it and install [PlatformIO IDE for VS
 	</video><br>
 </div>
 
-## 3. Install Device Drivers
+## 3. 安装设备驱动
 
 **Please note: these drivers will be automatically installed if you download and run the SlimeVR server.**
 

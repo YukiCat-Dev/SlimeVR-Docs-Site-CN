@@ -3,11 +3,11 @@
 * TOC
 {:toc}
 
-## Disclaimer
+## 免责声明
 
-*This page is not a definitive/step by step guide to straps.*
-*This page is meant to be used as inspiration to make your own DIY straps.*
-*All examples on this page are community made/provided.*
+*本页面不是一个具体的/手把手的绑带教学.*
+*这个页面是给你自定义绑带提供灵感启发.*
+*本页面的所有例子都源于社区.*
 
 ## Tom Yum's
 

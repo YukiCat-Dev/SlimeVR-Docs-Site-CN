@@ -1,6 +1,6 @@
 # 组件指南
 
-The costs shown should be taken as a **rough approximation** due to prices changing over time. Prices are in USD.
+所有价格容易受到时间和市场的变化因此应当被视为 **近似值** 仅供参考. 价格以美元为单位.
 
 ## 计算你的花费
 **追踪器的数量**

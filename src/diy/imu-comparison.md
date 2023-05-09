@@ -32,7 +32,7 @@
 可靠和稳定的芯片，但很难以适中的价格购买到。
 
 
-|校准时间 |成本  |可用性|制造质量|
+|校准时间 |成本  |供应状况|制造质量|
 |:---------:|:---:|:----------:|:-----------:|
 |30 - 45 min|~$25 |充足  |优秀    |
 
@@ -50,7 +50,7 @@ DIY SlimeVR的主流之一。
 BMI160是一款相对较新的芯片，具有不错的性能和良好的可靠性。
 建议你使用实验性的固件，因为它可以显著提高BMI160的性能。
 
-|校准时间 |成本  |可用性|制造质量|
+|校准时间 |成本  |供应状况|制造质量|
 |:---------:|:----:|:----------:|:-----------:|
 |10 - 20min |~$1.42|充足  |好         |
 
@@ -85,121 +85,121 @@ CJMCU-20948已知运行在1.8v，需要额外的硬件才能工作。
 
 Score: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i>
 
-|Pros             |Cons                                 |
+|优点                   |缺点                           |
 |-----------------|-------------------------------------|
-|Accurate         |Currently still in testing           |
-|Reliable         |Sensitive to bad magnetic enviroments|
-|Smooth           |Availability is not guaranteed       |
+|精准的        |目前仍在实验中           |
+|可靠的         |对恶劣的磁场环境敏感|
+|平滑的           |不保证可用性       |
 
-`Comment: Prone to some drift when moving really fast (in 6DoF mode).`
+`评价: 快速移动容易产生漂移 (6DoF模式中).`
 
 ---
 ## MPU9250
 The MPU9250 (currently ran in several modes) is a newer installment of the MPU lineup.
 
-|Reset time |Cost |Availability|Build quality|
+|校准时间 |成本  |供应状况|制造质量|
 |:---------:|:---:|:----------:|:-----------:|
-|10 - 40 min|~$7  |Insufficient|Mediocre     |
+|10 - 40 min|~$7  |不充分的|平庸     |
 
 Score: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o" ></i><i class="fa fa-star-o" ></i>
 
-|Pros             |Cons                                             |
+|优点                   |缺点                           |
 |-----------------|-------------------------------------------------|
-|Affordable       |Very prone to counterfeit/DOA units              |
-|Smooth           |Sensitive to bad magnetic enviroments            |
-|Reliable         |Requires manual calibration the first time       |
+|便宜的       |容易假货              |
+|平滑的           |对恶劣磁场敏感           |
+|可靠的         |第一次需要手动校准       |
 
-`Comment: Finding legitimate MPU9250s has become exceedingly difficult due to counterfeits and DOA IMUs. Buy at your own risk.`
+`评价: 市面上存在假货，购买时需要承受一定的风险.`
 
 ---
 ## MPU+QMC5883L
-This is a highly experimental setup that approximately matches an MPU9250.
-Unlike other IMUs which consist of a single PCB, this instead relies on connecting a magnetometer to an MPU6050 or MPU6500.
-That being said, a breakout board which includes both an MPU6050 and an HMC5883L does exist: the GY-87.
-Both the QMC5883L and HMC5883L may be used, however, the QMC5883L may potentially perform better.
+这是一个高度实验性的配置，与MPU9250大致相同。
+与由单个PCB组成的其他imu不同，这依赖于将磁力计连接到MPU6050或MPU6500。
+也就是说，存在一种分拆板包含MPU6050和HMC5883L:GY-87。
+QMC5883L和HMC5883L都可以使用，但是，QMC5883L可能性能更好。
 
 
-|Reset time |Cost  |Availability|Build quality|
+|校准时间 |成本  |供应状况|制造质量|
 |:---------:|:----:|:----------:|:-----------:|
-|10 - 40min |~$2.50|Sufficient  |Mixed        |
+|10 - 40min |~$2.50|充足  |混合的        |
 
 Score: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o" ></i><i class="fa fa-star-o" ></i>
 
-|Pros             |Cons                                             |
+|优点                   |缺点                           |
 |-----------------|-------------------------------------------------|
-|Cheap            |Very experimental                                |
-|Smooth           |Requires manual calibration the first time       |
-|Reliable         |Sensitive to bad magnetic enviroments            |
-|                 |Complex wiring                                   |
+|便宜的            |高度实验性                                |
+|平滑的           |第一次需要手动校准       |
+|可靠的         |对恶劣磁场环境敏感            |
+|                 |复杂的接线步骤                                   |
 
-`Comment: Requires experimental firmware.`
+`评价: 需要实验性固件.`
 
 ---
 ## BNO055
-Earlier version of the BNO085 without stabilisation firmware.
+没有稳定固件的BNO085的早期版本。
 
-*This chip does not have sufficient test results for a conclusive summary.*
+*该芯片没有足够的测试结果作为结论性总结*
 
-|Reset time |Cost |Availability|Build quality|
+|校准时间 |成本  |供应状况|制造质量|
 |:---------:|:---:|:----------:|:-----------:|
-|1 -10 min  |~$55 |Mediocre    |Good         |
+|1 -10 min  |~$55 |中等    |好         |
 
 Score: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o" ></i><i class="fa fa-star-o" ></i>
 
-|Pros                           |Cons                                          |
+|优点                   |缺点                           |
 |-------------------------------|----------------------------------------------|
-|Build Quality                  |Expensive                                     |
-|Available                      |Can supposedly lose tracking with rapid motion|
-|Smooth                         |Insufficient testing                          |
+|制造质量                  |昂贵                                    |
+|可用性                      |会因高速移动丢失追踪|
+|平滑的                        |缺少测试参数                         |
 
-`Comment: Insufficient testing for a accurate description, but cannot compete with BNO085.`
+`评价: 缺乏准确描述的测试，但无法与BNO085竞争。`
 
 ---
 ## MPU6500
-The MPU6500 is the middle ground of the MPU chips available.
-The drift time of this IMU may be a slight improvement over the MPU6050.
+MPU6500是可用的MPU芯片的中间地带。
+该IMU的漂移时间可能比MPU6050略有改善。
 
-|Reset time |Cost |Availability|Build quality|
+|校准时间 |成本  |供应状况|制造质量|
 |:---------:|:---:|:----------:|:-----------:|
-|5 - 10 min |~$1  |Sufficient  |Mediocre     |
+|5 - 10 min |~$1  |充足  |中等     |
 
 Score: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o" ></i><i class="fa fa-star-o" ></i>
 
-|Pros             |Cons                                    |
+|优点                   |缺点                           |
 |-----------------|----------------------------------------|
-|Affordable       |High drift rate                         |
-|Available        |More expensive than the 6050 counterpart|
-|Smooth           |Failure rate inconsistent               |
-|                 |Calibration on each start               |
+|比较便宜       |高漂移率                         |
+|可用性        |比6050贵|
+|平滑的           |故障率不稳定               |
+|                 |每次启动需要校准               |
 
-`Comment: Tracking slightly better than the MPU6050.`
+`评价: 跟踪性能略好于MPU6050。`
 
 ---
 ## MPU6050
-The MPU6050 will get you started with SlimeVR for cheap.
+MPU6050能让你低成本起步SlimeVR.
 
-|Reset time |Cost  |Availability|Build quality|
+|校准时间 |成本  |供应状况|制造质量|
 |:---------:|:----:|:----------:|:-----------:|
-|1 - 5 min  |~$1.04|Sufficient  |Poor         |
+|1 - 5 min  |~$1.04|充足  |差         |
 
 Score: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o" ></i>
 
-|Pros             |Cons                      |
+|优点                   |缺点                           |
 |-----------------|--------------------------|
-|Cheap            |High drift rate           |
-|High availability|High failure rate         |
-|                 |Calibration on each start |
+|便宜            |高漂移率           |
+|高可用性         |高故障率         |
+|                 |每次启动需要校准 |
 
-`Comment: Order more than you need because of the higher failure rate, it is not uncommon to find 2 to 3 bad chips in a batch.`
+`评价: 由于更高的故障率，你需要多购买几个备用，一批芯片中往往有2-3个坏的。`
 
 ---
-# Addendum
+# 附录
 
-## What's the difference between an IMU with a magnetometer (9 DOF) and an IMU without a magnetometer (6 DOF)?
+## 带磁力计(9自由度)的IMU和不带磁力计(6自由度)的IMU有什么区别?
 
 IMUs with a magnetometer work like a compass and use the Earths magnetic field as a reference point to eliminate gyroscope drift, however they require a stable magnetic environment or else they will perform erratically. IMUs without a magnetometer don't require a stable magnetic environment, but are prone to gyroscope drift over time due to being unable to differentiate sensor noise from actual movement and so will slowly spin in the yaw axis over time. For SlimeVR's purposes neither is implicitly better or worse than the other. The BNO085, which is the IMU official SlimeVR trackers will use, is used in 6DOF mode and yet performs the best out of all supported IMUs, for example.
 
-## How can I check if I have an acceptable magnetic environment?
+## 我该如何检查我是否有一个可接受的磁性环境?
 
 You can check by downloading any magnetometer app that shows what your magnetic field strength is in uT and by walking around your playspace. You may want to check at varying heights, such as at chest level, waist level, and ankle level. An option available on both iOS and Android is the app, Physics Toolbox Magnetometer. If you do use Physics Toolbox Magnetometer, you only need to pay attention to the **total**, not the X, Y, or Z components. Most phones have a magnetometer, but if yours does not, then there is no way to be exactly sure of your magnetic environment, but you can make some educated assumptions.
 
