@@ -1,71 +1,71 @@
 # 常见问题
 
-So something isn't working and you find yourself stuck, this page is here to give answers to common issues. If nothing here answers your question, please feel free to ask in the [#support-forum](https://discord.com/channels/817184208525983775/1025104406393405491) on the [SlimeVR Discord](https://discord.gg/slimevr). Make sure you mention all of the steps you have tried from here when asking for help.
+因此，如果某些内容无法正常工作，您会发现自己陷入困境，那么本页面将提供常见问题的答案。如果这里没有回答您的问题，请随时在[#support-forum](https://discord.com/channels/817184208525983775/1025104406393405491) on the [SlimeVR Discord](https://discord.gg/slimevr)中提问。在寻求帮助时，请确保提及您从这里尝试的所有步骤。
 
 * TOC
 {:toc}
 
-## Please specify upload_port while updating firmware / trying to upload firmware fails
+## 在更新固件/尝试上传固件时，请指定upload_port
 
-This error indicates there is interference between your computer and the tracker. Check the following:
+此错误表示您的计算机和追踪器之间存在干扰。请检查以下内容：
 
-1. Make sure your USB cable from the tracker is plugged firmly into your PC.
-1. Make sure that your USB cable is a data and charging cable (it is suggested you try other cables or devices with the cable).
-1. Make sure that your drivers are up to date.
+1. 确保您从追踪器到计算机的USB电缆已牢固插入。
+1. 确保您的USB电缆是数据和充电电缆（建议您尝试使用其他电缆或设备）。!!!有些线缆仅包含充电功能，不包含数据传输!!!
+1. 确保您的驱动程序已更新到最新版本。
 
-Additionally, this can be caused by software hogging COM ports (**VSCode and Cura can be the cause of this**).
+此外，这可能是由软件独占COM端口引起的(**VSCode和Cura可能是原因**)。
 
-## The SlimeVR Server won't start
+## SlimeVR服务器无法启动
 
-- If there's a port error, make sure you don't have other instances of the server running and/or restart your PC.
-- This may also be caused by Java not being installed or issues with your Java installation. The installer linked in the [Installing the server page](server/initial-setup.md#install-the-latest-slimevr-installer) should handle this.
+- 如果出现端口错误，请确保没有其他服务器实例正在运行和/或重新启动计算机。
+- 这也可能是由于未安装Java或Java安装存在问题引起的。链接到 [安装服务器页面](server/initial-setup.md#install-the-latest-slimevr-installer)的安装程序应处理此问题。
 
-## The Wi-Fi Settings window outputs ERROR
+## Wi-Fi设置窗口输出ERROR
 
-Try resetting your tracker, this may fix the issues immediately. If this doesn't work, your COM port may be being hogged, which can be tested by going through the firmware update process in VSCode (as it has more verbose error messages). If this is the case, close any application that might be hogging the ports (VSCode and Cura are often the cause). If the issue persists, try connecting the tracker to a different USB port.
+尝试重置追踪器，这可能会立即解决问题。如果这不起作用，则可能正在独占COM端口，可以通过在VSCode中执行固件更新过程（因为它具有更详细的错误消息）进行测试。如果是这种情况，请关闭可能独占端口的任何应用程序（VSCode和Cura通常是原因）。如果问题仍然存在，请尝试将追踪器连接到另一个USB端口。
 
-## The Wi-Fi Settings window outputs symbols and nothing else
+## Wi-Fi设置窗口输出符号而没有其他内容
 
-There are two common causes that you should check:
+有两个常见原因需要检查：
 
-- Make sure that you have the right driver installed.
-- Check that your PIO firmware upload worked. If you have multiple firmware versions open in VSCode you will have to set the correct one to default to upload.
+- 确保已安装正确的驱动程序。
+- 检查您的PIO固件上传是否成功。如果在VSCode中打开了多个固件版本，则必须将正确的版本设置为默认以进行上传。
 
-## My tracker keeps flashing
+## 我的追踪器一直在闪烁
 
-This is intended behavior, the number of flashes lets you know the current status of your tracker. Check the top of the [the setup page for more info](server-setup/initial-setup.md#test-your-trackers).
+这是正常的，闪烁次数可以让您了解追踪器的当前状态。请查看[设置页面顶部以获取更多信息。](server-setup/initial-setup.md#test-your-trackers).
 
-## My tracker never connects to Wi-Fi / are not appearing on the SlimeVR Server
+## 我的追踪器从未连接到Wi-Fi/未出现在SlimeVR服务器上
 
-The two common issues that cause this error are:
+导致此错误的两个常见问题是：
 
-- Make sure you are connecting to a 2.4GHz network, 5GHz networks are not supported.
-- Check your SSID for special characters. At the time of writing SlimeVR only supports network SSIDs that contain alphanumerical characters.
+- 确保您连接到2.4GHz网络，追踪器不支持5GHz网络。
+- 检查您的SSID是否包含特殊字符。在编写本文时，SlimeVR仅支持包含字母数字字符的网络SSID。
 
-If all of this is correct, you can check your gateway's list of connected devices to see if all your trackers are connecting. If a tracker is not connecting even after using the same firmware upload with hardcoded Wi-Fi details there are two additional steps you can check:
+如果所有这些都正确，则可以检查网关的连接设备列表，以查看所有追踪器是否连接。如果即使在使用硬编码的Wi-Fi详细信息进行相同的固件上传后，追踪器仍未连接，则可以检查两个其他步骤：
 
-- Check if your Wi-Fi has reached it's maximum allowed Wi-Fi connections. You can test this by disconnecting devices and then trying to connect your trackers again.
-- If you hard coded your Wi-Fi settings in `platformio.ini` try connecting your trackers via usb and [pushing new Wi-Fi details](server/connecting-trackers.md#connect-trackers). You may find this either fixes your connection or provides you with additional details on why the connection is failing.
+- 检查您的Wi-Fi是否已达到其允许的最大Wi-Fi连接数。您可以通过断开设备然后再次尝试连接追踪器来测试此功能。
+- 如果在 `platformio.ini` 中硬编码了Wi-Fi设置，请尝试通过USB连接追踪器并 [设置新的Wi-Fi详细信息](server/connecting-trackers.md#connect-trackers). 您可能会发现这要么修复了您的连接，要么为您提供了有关为什么连接失败的其他详细信息。
 
-## My aux tracker isn't working
+## 我的辅助追踪器不起作用
 
-In order to make sure your aux tracker is set up, you need to specify it in your `defines.h` uploaded to the primary tracker's firmware. Check the [bottom of the section mentioning defining the pins on the configuring the SlimeVR firmware page](firmware/configuring-project.md#define-pins-of-the-selected-board). Alternatively, you should ensure that you have correctly soldered VCC to AD0 on your aux tracker IMU.
+为了确保设置了辅助追踪器，您需要在上传到主要追踪器固件的 `defines.h` 中指定它。请检查 [配置SlimeVR固件页面底部提到定义选定板上引脚部分](firmware/configuring-project.md#define-pins-of-the-selected-board)。或者，您应确保已将VCC正确焊接到辅助追踪器IMU上的AD0。
 
-## Sensor was reset error
+## 传感器已重置错误
 
-Check your INT wire, there is either a bad connection or you have it connected to the flash pin. If you are building your tracker on a breadboard, your connections may be not firm enough and cause this error.
+检查您的INT线路，存在错误连接或将其连接到闪存引脚。如果您正在面包板上构建跟踪器，则可能会导致连接不够牢固而导致此错误。
 
-## The trackers are connected to my Wi-Fi but don't turn up on SlimeVR
+## 追踪器已连接到我的Wi-Fi但未出现在SlimeVR上
 
-Check that you do not have two copies of the SlimeVR server running, as only one of them will show trackers connected.
+请确保没有两个副本的SlimeVR服务器正在运行，因为只有一个副本会显示已连接的跟踪器。
 
-If only one server is running, this is most likely a firewall issue, go to SlimeVR Server folder and run `firewall.bat` as administrator to add the firewall rules to Windows Defender Firewall.
+如果只有一个服务器正在运行，则最可能是防火墙问题，请转到SlimeVR Server文件夹并以管理员身份运行`firewall.bat` 以将防火墙规则添加到Windows Defender防火墙中。
 
-If you are still having trouble, try manually adding the SlimeVR Server to your firewall.
+如果仍然遇到问题，请尝试手动将SlimeVR Server添加到防火墙中。
 
-1. Go to **Settings** > **Network & Internet** then click on the text link **Window Firewall** (you may have to scroll down).
-1. In the firewall window, click the link **Allow an app through firewall**.
-1. Click the **Allow another app...** button, and then **Browse...** in the opened **Add an app** window. If your options are greyed out in the **Allowed apps** window, click the **Change Settings** button to allow changes.
+1. 去到 **设置** > **网络和Internet** 然后点击 **Window防火墙** (你可能需要下滑).
+1. 在防火墙窗口中, 点击 **允许应用通过防火墙**.
+1. 点击 **允许其他应用...** 按钮, 然后点击 **浏览...** in the opened **Add an app** window. If your options are greyed out in the **Allowed apps** window, click the **Change Settings** button to allow changes.
 1. In the **File name** text box, type `*.*` and press enter before navigating to `slimevr.jar` in your SlimeVR server folder and select it (if you cannot see files in this folder, try typing `*.*` and pressing enter again to show all files).
 1. Click the **Add** button to add the file to your firewall settings.
 1. Finally, make sure both public and private check boxes are selected in the **Allowed apps** window before clicking **OK** to save the changes.

@@ -1,6 +1,6 @@
-# Summary
+# 总览
 
-[Introduction](README.md)
+[介绍](README.md)
 
 # 用户指南
 
@@ -31,9 +31,9 @@
     - [配置固件](firmware/configuring-project.md)
     - [构建并上传固件](firmware/upload-firmware.md)
 
-# Advanced User Guide
+# 高级用户指南
 
-- [Applications and Variants](tools/README.md)
+- [应用程序及变体](tools/README.md)
     - [owoTrack App](tools/owoTrack.md)
     - [SlimeVR Wrangler](tools/slimevr-wrangler.md)
     - [Termux Setup](tools/termux-installation.md)
