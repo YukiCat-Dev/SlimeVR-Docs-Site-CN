@@ -1,4 +1,4 @@
-# Building and Uploading the Firmware
+# 构建然后上传固件
 
 Uploading your firmware must initially be done over cable. Once you have the tracker connected to your WiFi after your first firmware update, you can opt to use OTA in the future.
 
