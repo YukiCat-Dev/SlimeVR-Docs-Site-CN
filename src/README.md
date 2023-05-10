@@ -2,15 +2,15 @@
 
 欢迎来到SlimeVR文档. 本站介绍如何 [制造你自己的 SlimeVR 追踪器](diy/index.html), [安装或更新现有追踪器固件](firmware/index.html), [安装并配置SlimeVR服务器](server/index.html), and [提供广泛的社区构建工具集合](tools/index.html).
 
-> **批注:** 你需要至少5个追踪器来实现全身追踪 (FBT). 或者, you can build a single tracker for just waist tracking if you wish to test the tracking without investing in a full kit. Other options do exist (such as using phones or joycons), but these options will be restricted by the device you use, and as such you will see much worse results.
+> **批注:** 你需要至少5个追踪器来实现全身追踪 (FBT). 或者, 如果你想测试腰围追踪功能，你可以构建一个单独的腰部追踪器，而无需购买完整的套件。也存在其他方案 (例如使用手机或joycons), 但这些选项会受限于你使用的设备, 可能会效果不佳。
 
-## What is SlimeVR?
+## 什么是SlimeVR?
 
-SlimeVR is a set of open hardware sensors and open source software that facilitates full-body tracking (FBT) in virtual reality. The project is built around creating a system that is customisable, hackable and can be modified to suit the needs of the user. Due to this, this documentation provides the full breakdown of not just how to set up your environment, but also how you could build a set of trackers yourself. For a more detailed breakdown of how the system works, check [SlimeVR 101](slimevr101.html).
+SlimeVR是一组开放硬件传感器和开源软件，可在虚拟现实中实现全身跟踪（FBT）。该项目的构建围绕着创建一个可定制、可黑客和可修改以适应用户需求的系统。因此，本文档不仅提供了如何设置您的环境的完整说明，还提供了如何自己构建一组跟踪器的完整说明。有关系统如何工作的更详细说明，请查看[SlimeVR 101](slimevr101.html).
 
-## How do I get my hands on those sweet sweet SlimeVR trackers?
+## 如何获得这些甜蜜的SlimeVR追踪器？
 
-There are currently multiple ways to approach putting together your own FBT solution using SlimeVR.
+目前有多种方法可以使用SlimeVR组装自己的FBT解决方案。
 
 ### 1. 购买追踪器
 
@@ -18,54 +18,54 @@ There are currently multiple ways to approach putting together your own FBT solu
 
 ![Slime Trackers](assets/img/slimeVRTrackers.jpg)
 
-You buy fully built trackers for pre-order at [Crowd Supply](https://www.crowdsupply.com/slimevr/slimevr-full-body-tracker). These trackers are the passion project of dedicated core members of SlimeVR, and due to chip shortages, shipping delays and the like we cannot guarantee shipping dates or turnaround time.
+您可以在[Crowd Supply](https://www.crowdsupply.com/slimevr/slimevr-full-body-tracker)上预订完整的追踪器。这些追踪器是SlimeVR专注核心成员的热情项目，由于芯片短缺、运输延迟等原因，我们无法保证发货日期或周转时间。
 
-This option is a preorder. Please check the product page for estimated shipping times for new orders. Actual shipping times might differ due to production delays and other circumstances.
+此选项是预订。请查看产品页面以获取新订单的预计发货时间。实际发货时间可能因生产延误和其他情况而有所不同。
 
 #### 第三方卖家
 
-3rd Party sellers are becoming common, with commissions being offered on the [SlimeVR discord](https://discord.gg/SlimeVR) marketplace forum. Designs and specifications vary from offering to offering, so make sure to check exactly what you are getting! As one of the most important aspects of the tracker is the IMU (used to measure your movement), we suggest you check the [IMU comparison page](diy/imu-comparison.html) to get an idea of what to expect from any available tracker.
+第三方销售商正在变得越来越普遍, 订购可以在 [SlimeVR discord](https://discord.gg/SlimeVR) 市场论坛上找到。设计和规格因供应而异，因此请确保检查您获得的内容！由于追踪器最重要的方面之一是IMU（用于测量您的运动），我们建议您查看 [IMU 比较页面](diy/imu-comparison.html)以了解任何可用追踪器的预期。
 
-> **Caution:** SlimeVR cannot ensure 3rd party trackers meet any requirements of quality, please assume that purchasing from a 3rd party seller is the equivalent of buying from a small creator, and your own research into the quality of these trackers is important. We suggest you check reviews or talk to others that have purchased from the seller in order to get an idea of what to expect. If any of your purchased 3rd party trackers develop a fault, contact the seller for help. However, you may need some understanding of soldering in order to repair them yourself.
+> **注意:** SlimeVR无法确保第三方追踪器符合任何质量要求，请假定从第三方销售商购买相当于从小型创作者购买，您自己对这些追踪器的质量进行研究非常重要。我们建议您查看评论或与已经从卖家那里购买过的其他人交谈，以了解预期。如果您购买的任何第三方追踪器出现故障，请联系卖家寻求帮助。但是，您可能需要一些焊接理解才能自行修复它们。
 
-### 2. Building them yourself
+### 2. 自己构建
 
-#### Entirely from scratch
+#### 完全从零开始
 
 ![Example DIY build](assets/img/exampleBuild.jpg)<br>
 *Example build by NightyIceC00kie*
 
-Building trackers is the most common way users have trackers at the time of writing. This documentation provides a full [guide to building trackers from scratch](diy/index.html), which provides lists of full components needed, where to buy them and schematics for many combinations of IMUs and Microcontrollers.
+在撰写本文时，构建追踪器是用户拥有追踪器的最常见方法。本文档提供了一个完整的[从头开始构建追踪器的指南](diy/index.html), 其中提供了所需的完整组件列表、购买它们的位置以及许多IMU和微控制器组合的原理图。
 
-This is the cheapest and fastest way to obtain trackers, assuming you have a soldering iron on hand a single tracker can be put together for under $20. 
+这是获得追踪器最便宜、最快速的方法，假设您手头有一个焊铁，一个单独的追踪器可以花费不到20美元。
 
-DIY builds require time to assemble and may require self-repairs from time to time.
+DIY构建需要时间来组装，并且可能需要不时进行自我维修。
 
-#### Pre-order the official DIY Kit on Crowd Supply
+#### 在Crowd Supply网站预购官方DIY套件
 
 ![DIY kit](assets/img/DIY_KIT_box-contents.jpg)<br>
 *A prototype of DIY-Kit boards and wires.*
 
-You buy the [**official DIY Kit**](https://www.crowdsupply.com/slimevr/slimevr-full-body-tracker) which includes all the boards and cables you need, get a LiPo battery, and attach batteries to the boards. All you need is to 3D print (or build) yourself a nice casing and get straps (or get creative and tape them with electrical tape to your body). See [DIY Kit Guide](/diy_kit_guide.html) for more information on how to build it.
+您可以购买 [**official DIY Kit**](https://www.crowdsupply.com/slimevr/slimevr-full-body-tracker)，其中包括您需要的所有板和电缆，获得LiPo电池，并将电池连接到板上。您只需要自己3D打印（或构建）一个漂亮的外壳并获得绑带（或创意地用电气胶带将其粘在身上）。有关如何构建它的更多信息，请参见 [DIY Kit Guide](/diy_kit_guide.html) 。
 
-This option requires no or little soldering, provides tested boards, best available IMUs, allows for a small design, and is a cheaper alternative to buying completed SlimeVR trackers. It also allows you to customize cases and straps.
+此选项不需要或很少需要焊接，提供经过测试的板、最佳的IMU，允许小型设计，并且是购买完成的SlimeVR追踪器的更便宜的替代品。它还允许您自定义外壳和绑带。
 
-However, at this point you could just buy completed SlimeVR trackers as the shipping times and chip shortages still affect this option. 
+但是，此时您可以直接购买完成的SlimeVR追踪器，因为运输时间和芯片短缺仍然影响此选项。
 
-This option is a preorder. Please check the product page for estimated shipping times for new orders. Actual shipping times might differ due to production delays and other circumstances.
+此选项是预订。请查看产品页面以获取新订单的预计发货时间。实际发货时间可能因生产延误和其他情况而有所不同。
 
-### 3. Alternative tracking options
+### 3. 备选追踪器方案
 
-As SlimeVR is open sources and has roots in the idea of experimentation and exploration, other options to replace custom built trackers have been built. This includes:
+由于SlimeVR是开源的，并且根植于实验和探索的思想，因此已经构建了其他替代自定义构建追踪器的选项。这包括：
 
-- Using [a phone in place of a tracker](tools/owoTrack.md).
-- Using [Nintendo Joycons in place of trackers](tools/slimevr-wrangler.html).
+- 使用 [手机作为追踪器](tools/owoTrack.md).
+- 使用 [任天堂Joycons手柄作为追踪器](tools/slimevr-wrangler.html).
 
-**Please note that both of these options are subpar when compared to trackers, but are useful for experimenting. We suggest you do not invest heavily in buying old phones or joycons, as most users of these options only consider them stopgaps at best.**
+**请注意，与追踪器相比，这两个选项都不够好，但对于实验非常有用。我们建议您不要大量投资购买旧手机或Joycons，因为这些选项的大多数用户最多只考虑它们是临时措施。**
 
-Note that these options vary depending on make and model (3rd party joycons almost never work for example), there have been issues with connections, the application being suspended, and a handful of others. Phone or Joycon straps are also required to be sourced based on the objects shape, size, and mount location.
+请注意，这些选项因制造和型号而异（例如，第三方joycons几乎从不起作用），存在连接问题、应用程序被暂停以及其他一些问题。还需要根据对象的形状、大小和安装位置来获取手机或Joycon绑带。
 
-
-If you have any problems, feel free to reach out on the [SlimeVR discord](https://discord.gg/SlimeVR).
+如果您有任何问题，请随时在[SlimeVR discord](https://discord.gg/SlimeVR)上联系我们。
 
 *Written by adigyran#1121 and CalliePepper#0666, edited by QuantumRed#0001, CalliePepper#0666, Spazzwan Emojikage#3095, NWB#5135, and Tom Yum#0069, styled by CalliePepper#0666*
+*中文本地化：DazaiYuki*

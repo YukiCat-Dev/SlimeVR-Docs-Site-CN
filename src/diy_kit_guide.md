@@ -1,11 +1,13 @@
 # SlimeVR DIY Kit
 
-## Thank you for purchasing the SlimeVR DIY kit!
-To get your DIY set operational there are a handful of steps you will need to take. On this page we will guide you through the basic process involved in creating your own ready-to-use set of SlimeVR trackers. While this guide contains some general recommendations, feel free to deviate from the norm and make them truly your own! Have fun!
+*本页面是购买官方SlimeVR DIY Kit的说明*
 
-## Introduction
-### Box contents
-Inside your SlimeVR DIY kit are 7 large SlimeVR Mainboards, 3 small SlimeVR Tracker extensions, and 3 Extension cables (1 long, 2 short).
+## 感谢您购买SlimeVR DIY kit!
+要使您的DIY套件运行，您需要采取一些步骤。在DIY套件指南页面上，您可以找到一份指南，该指南将引导您完成创建自己的即插即用SlimeVR追踪器套件所涉及的基本过程。虽然此指南包含一些一般性建议，但请发挥想象力自由创作！玩得开心！
+
+## 介绍
+### 盒子内容物
+在您的SlimeVR DIY套件内部有7个大型SlimeVR主板、3个小型SlimeVR追踪器扩展和3个扩展电缆（1个长电缆，2个短电缆）。
 
 <img alt="Box contents image" src="./assets/img/DIY_KIT_box-contents.jpg" width="700" />
 
