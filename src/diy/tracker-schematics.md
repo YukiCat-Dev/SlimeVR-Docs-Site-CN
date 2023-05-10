@@ -1,4 +1,4 @@
-# 传感器电路图
+# 追踪器电路图
 
 ## Wemos D1 Mini
 
@@ -35,7 +35,7 @@
 | D7    | GPIO13 | Yes              | Yes         | MOSI pin for SPI interface                          |
 | D8    | GPIO15 | Pulled to ground | Yes         | CS pin for SPI interface                            |
 
-## 辅助跟踪器电缆布局建议
+## 辅助追踪器电缆布局建议
 
 Note that while schematics show SDA and SCL running adjacent to each other, make sure that they are not physically adjacent
 when running in the auxiliary tracker cable. This is to avoid [crosstalk](https://www.i2cchip.com/i2c_connector.html#Crosstalk) and ensure stable operation of both trackers when cable and allows the extension to safely reach more than 80cm.

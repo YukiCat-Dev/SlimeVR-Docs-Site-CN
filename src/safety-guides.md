@@ -1,25 +1,24 @@
-# Safety Guides
+# 安全指南
 
-Download the official instructions and safety guide [here](./assets/files/Instructions_and_safety_manual.pdf).
+下载官方使用说明和安全指南 [在这里](./assets/files/Instructions_and_safety_manual.pdf).
 
-## EN: Instructions for safe use
-To prevent damage or malfunction and ensure correct use of the product, please observe the following:
-- Do not expose the product to water or moisture.
-- Do not expose the product to heat.
-- The AUX port is only intended to be connected to official auxiliary trackers. Improper use may cause the product to malfunction.
-- Do not plug or unplug extensions while the product is powered on.
-- Do not overtighten straps. This can reduce circulation and lead to injury.
+## 安全使用规章：
+为防止损坏或故障，确保正确使用产品，请遵守以下规定:
+- 不要将产品暴露在水或潮湿环境中。
+- 不要将产品暴露在水或潮湿环境中。
+- AUX端口仅用于连接官方辅助追踪器。不当使用可能会导致产品故障。
+- 在产品开启的情况下，不要插拔扩展设备。
+- 不要过紧的绑带。这可能会影响血液循环并导致受伤。
 
-This product generates RF radiation. This could cause interference with cardiac pacemakers, implanted defibrillators (ICDs), and other implants. Maintain at least 15cm / 6" separation between the implanted device and the product, and follow the implant safety instructions.
+本产品会产生射频辐射。这可能会对心脏起搏器、植入式除颤器（ICD）和其他植入物产生干扰。请保持植入设备与产品之间至少15厘米/ 6英寸的距离，并遵循植入物安全说明。
+本产品包含锂电池。不当处理锂电池可能会导致损坏或故障，极端情况下可能会造成以下风险：发热、火灾、烟雾或气体产生和爆炸。
 
-The product contains a lithium battery. Improper handling of a lithium battery can cause damage or malfunction, which in extreme cases can pose a risk of: heat generation, fire development, smoke or gas development, and explosion.
-
-- Do not leave the product unattended during charging.
-- Only charge the product using an external power supply rated for 5V DC.
-- Only charge the product in ambient temperatures ranging from 10°C to 40°C / 50°F to 104°F.
-- Switch off the product after use and when charging.
-- Store away from direct sunlight.
-- When not using the product for a prolonged period of time, charge them intermittently to ensure battery health.
-- Only dispose of this product at special collection points.
+- 充电时不要让产品无人看管。
+- 仅使用额定为5V DC的外部电源充电。
+- 仅在环境温度在10°C至40°C / 50°F至104°F之间时充电。
+- 使用后和充电时请关闭产品电源。
+- 远离阳光直射。
+- 长时间不使用本产品时，请间歇性地充电以确保电池健康。
+- 仅在特殊收集点处处理此产品。
 
 *Created by Vyolex#1715. Translations provided by the community.*

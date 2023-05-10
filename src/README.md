@@ -1,8 +1,8 @@
-# SlimeVR Documentation
+# SlimeVR文档
 
-Welcome to the SlimeVR documentation. This site covers how to [build your own SlimeVR trackers](diy/index.html), [install or update an existing tracker's firmware](firmware/index.html), [install and configure the SlimeVR Server](server/index.html), and [provides a wide collection of community built tools](tools/index.html).
+欢迎来到SlimeVR文档. 本站介绍如何 [制造你自己的 SlimeVR 追踪器](diy/index.html), [安装或更新现有追踪器固件](firmware/index.html), [安装并配置SlimeVR服务器](server/index.html), and [提供广泛的社区构建工具集合](tools/index.html).
 
-> **Note:** You need at least 5 trackers for proper full body tracking (FBT). Alternatively, you can build a single tracker for just waist tracking if you wish to test the tracking without investing in a full kit. Other options do exist (such as using phones or joycons), but these options will be restricted by the device you use, and as such you will see much worse results.
+> **批注:** 你需要至少5个追踪器来实现全身追踪 (FBT). 或者, you can build a single tracker for just waist tracking if you wish to test the tracking without investing in a full kit. Other options do exist (such as using phones or joycons), but these options will be restricted by the device you use, and as such you will see much worse results.
 
 ## What is SlimeVR?
 
@@ -12,7 +12,7 @@ SlimeVR is a set of open hardware sensors and open source software that facilita
 
 There are currently multiple ways to approach putting together your own FBT solution using SlimeVR.
 
-### 1. Buying trackers
+### 1. 购买追踪器
 
 #### Fully built trackers directly from SlimeVR
 
@@ -22,7 +22,7 @@ You buy fully built trackers for pre-order at [Crowd Supply](https://www.crowdsu
 
 This option is a preorder. Please check the product page for estimated shipping times for new orders. Actual shipping times might differ due to production delays and other circumstances.
 
-#### 3rd Party sellers
+#### 第三方卖家
 
 3rd Party sellers are becoming common, with commissions being offered on the [SlimeVR discord](https://discord.gg/SlimeVR) marketplace forum. Designs and specifications vary from offering to offering, so make sure to check exactly what you are getting! As one of the most important aspects of the tracker is the IMU (used to measure your movement), we suggest you check the [IMU comparison page](diy/imu-comparison.html) to get an idea of what to expect from any available tracker.
 
